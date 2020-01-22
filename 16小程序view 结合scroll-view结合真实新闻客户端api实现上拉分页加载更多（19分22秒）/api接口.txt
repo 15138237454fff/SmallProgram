@@ -1,0 +1,10 @@
+¡–±Ì
+
+http://www.phonegap100.com/appapi.php?a=getPortalList&catid=20&page=1
+
+
+œÍ«È
+
+http://www.phonegap100.com/appapi.php?a=getPortalArticle&aid=123
+
+

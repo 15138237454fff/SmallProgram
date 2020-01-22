@@ -1,0 +1,42 @@
+1、找到demo
+	https://github.com/icindy/wxParse
+
+
+2、下载这个demo
+
+
+
+3、把demo里面的wxParse目录 拷贝到我们的项目里面
+
+
+
+4、在我们要用到的页面的js里面引入  wxParse下面的js
+
+	var WxParse = require('../../wxParse/wxParse.js');
+
+        var article = '<div>我是HTML代码</div>';
+/**
+* WxParse.wxParse(bindName , type, data, target,imagePadding)
+* 1.bindName绑定的数据名(必填)
+* 2.type可以为html或者md(必填)
+* 3.data为传入的具体数据(必填)
+* 4.target为Page对象,一般为this(必填)
+* 5.imagePadding为当图片自适应是左右的单一padding(默认为0,可选)
+*/
+      var that = this;
+       WxParse.wxParse('article', 'html', article, that, 5);
+
+	
+
+
+5、可以在app.wxss引入 wxParse.wxss
+
+	
+	@import "wxParse/wxParse.wxss";
+
+
+6、模板 wxml引入下面代码
+
+	<import src="你的路径/wxParse/wxParse.wxml"/>
+          //这里data中article为bindName
+        <template is="wxParse" data="{{wxParseData:article.nodes}}"/>

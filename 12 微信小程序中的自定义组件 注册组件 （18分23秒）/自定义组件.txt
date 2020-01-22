@@ -1,0 +1,20 @@
+1.新建components文件夹
+
+2、在components文件夹下面创建一个组件文件夹，然后点击右键创建组件
+
+
+
+3、注册组件：
+
+	
+{
+  "navigationBarTitleText":"新闻页面",
+  
+  "usingComponents": {
+    "br": "../../components/br/br" ,
+
+    "header": "../../components/header/header"
+  }
+}
+
+注意路径
